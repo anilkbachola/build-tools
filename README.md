@@ -8,6 +8,7 @@ Use in maven project along with a maven profile to run the code analysis.
 1. Setup a maven profile and add the library as a dependency to static code analysis plugins.
 Its best to setup the profiles at a parent project pom.xml so that all the modules and sub-modules will be analyzed.
 
+```xml
 <profiles>
 		<profile>
 			<id>analyze</id>
@@ -116,5 +117,5 @@ Its best to setup the profiles at a parent project pom.xml so that all the modul
 			</build>
 		</profile>
 	</profiles>
-	
+	```
 	2. Once the profile is run and activated, individual reports get generated in the target folder
